@@ -1,0 +1,138 @@
+/* VARIABLES */
+:root{
+    --primary: rgb(7,4,62);
+    --light: rgb(88,89,137);
+    --accent: rgb(48,101,248);
+    --neutral:rgb(246,246,254);
+}
+/* GENERAL */
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    line-height: 1.4;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-gap: 0;
+}
+
+/* NAVIGATION */
+.main-nav img{
+    margin:20px;
+}
+.main-nav ul{
+  display:inline-block;
+  vertical-align:top;
+  padding-left: 45rem;
+  margin: 0px;
+}
+.main-nav li{
+    display: inline;
+    float: right;
+    padding: 20px;
+    justify-content: initial;
+    color: var(--primary);
+}
+/* SECTIONS */
+section{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+}
+/* FIRST SECTION */
+.first h1{
+    color: var(--primary);
+}
+.first p{
+    color: var(--primary);
+}
+.first form input[type=text]{
+    border: 1px var(--accent) solid;
+    padding: 0.2rem 2rem;
+    border-radius: 2px;
+}
+.first form button{
+    background: var(--accent);
+    color: var(--neutral);
+    text-align:center;
+    padding: 0.2rem 2rem;
+    border: none;
+    border-radius: 2px;
+    margin-left:0.2rem;
+}
+/* SECOND SECTION */
+.second{
+    background: url(./images/bg-curve-desktop.svg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 0;
+}
+.second .container h1{
+    color: var(--primary);
+}
+.second .container p{
+    color: var(--primary);
+}
+.second .container a{
+    text-decoration: underline;
+}
+.second figure{
+    border: #fff;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 4px 4px 3px 3px #333;
+    box-sizing: content-box;
+    width: 50%;
+    height: 50%;
+    margin: 1rem;
+}
+.second figure img{
+    border-radius: 60px;
+}
+
+/* THIRD SECTION */
+.third{
+    background: var(--light);
+    padding: 50px;
+    margin: 0;
+    color: var(--neutral);
+}
+.third-right input[type=text]{
+    display: block;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    padding-right: 10rem;
+    border-radius: 2px;
+    border: none;
+}
+.third-right button{
+    padding:0.5rem;
+    border-radius: 2px;
+    background: var(--accent);
+    color: var(--neutral);
+    border: none;
+}
+/* FOOTER */
+footer{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    background: var(--primary);
+    color: var(--neutral);
+    padding:40px;
+}
+footer li{
+    list-style: none;
+}
+footer div:nth-child(4) i{
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 0.1rem;
+}
